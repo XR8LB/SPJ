@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home2.css" />
+    <script
+      src="https://kit.fontawesome.com/1c5ef1ef58.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>القائمة الرئيسية</title>
+  </head>
+  <body dir="rtl">
+    <header>
+      <div class="navbar">
+        <a
+          href="https://www.facebook.com/profile.php?id=100088108530728&mibextid=ZbWKwL"
+          target="_blank"
+          ><i class="fa-brands fa-facebook fa-2x" id="facebook"></i
+        ></a>
+        <div class="logo"><a href="#">ث.الشهيد ابو مهدي المهندس</a></div>
+        <ul class="links">
+          <li><a href="timetable.html">جدول الدروس</a></li>
+          <li><a href="books.html">مناهج دراسية</a></li>
+          <li><a href="FAQ.html">الاسئلة الشائعة</a></li>
+          <li><a href="aboutme.html">عني</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="">القائمة الرئيسية</a></li>
+        <li><a href="timetable.html">جدول الدروس</a></li>
+        <li><a href="FAQ.html">الاسئلة الشائعة</a></li>
+        <li><a href="books.html">المناهج الدراسية</a></li>
+        
+        <li><a href="aboutme.html">عني</a></li>
+        
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>مرحبا بكم</h1>
+        <p>
+          ثانوية الشهيد ابو مهدي المهندس<br />
+          وسميت تيمنا الى الشهيد القائد ابو مهدي المهندس رحمه الله عليه
+          <br />
+          أسست هذه المدرسة في عام 2019 وتعد هذه المدرسة من افضل مدارس بغداد
+          وحصلت هذه المدرسة على نسبه 100% في الامتحانات الوزارية لعام 2022/2023
+          و 2021/2022 وتتميز بكادرها التدريسي الرائع وطلابها المتفوقون وهذا ان
+          شاء الله هو الموقع الرسمي لمدرسة الشهيد أبو مهدي المهندس<br />
+          "وَلَا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا
+          بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ"<br />
+          مع خالص احترامي
+        </p>
+      </section>
+    </main>
+
+    <h3 class="cm">للتواصل معي</h3>
+
+    <div class="sma">
+      <a href="https://www.instagram.com/x8r._2?igsh=YzVkODRmOTdmMw==" target="_blank">
+        <i class="fa-brands fa-instagram fa-3x" ></i>
+      </a>
+      <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=basharalzain2008@gmail.com&tf=1" target="_blank">
+        <i class="fa-regular fa-envelope fa-3x" ></i>
+      </a>
+      <a href="https://t.me/XR8LB" target="_blank">
+        <i class="fa-brands fa-telegram fa-3x" ></i>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>

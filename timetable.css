@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Changa:wght@200;300&display=swap");
+* {
+  font-family: "Cairo", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  direction: rtl;
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  background-color: white;
+  background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80");
+  background-size: cover;
+  background-position: center;
+}
+#icon1 {
+  color: white;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+#icon1:hover {
+  opacity: 0.8;
+}
+
+#icon1:active {
+  opacity: 0.4;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h1::after {
+  content: "";
+  height: 3px;
+  width: 225px;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  margin-bottom: 7px;
+}
+
+button {
+  height: 70px;
+  width: 120px;
+  border-radius: 20px;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #03eeff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+button:active {
+  transform: scale(0.9);
+}
+
+.pc p,
+h2 {
+  color: #ffffff;
+}
+
+.pc p {
+  text-align: right;
+  margin: 10px;
+  padding: 0;
+}
+
+.pc h2 {
+  margin-top: 30px;
+}
+
+.pc h2::after {
+  content: "";
+  height: 3px;
+  width: 225px;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  margin-bottom: 7px;
+}
